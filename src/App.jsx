@@ -6,6 +6,7 @@ import AddUserForm from './components/AddUserForm';
 import EditUserModal from './components/EditUserModal';
 import SearchAndFilter from './components/SearchAndFilter';
 import useLocalStorage from './hooks/useLocalStorage';
+import ChateBot from './components/Chat/ChateBot';
 import './App.css';
 
 function App() {
@@ -176,8 +177,12 @@ function App() {
           onClose={() => setEditingUser(null)} 
         />
       )}
+     <ChateBot />
     </div>
+    
+    
   );
+  
 }
 
 export default App;
