@@ -1,12 +1,72 @@
-# React + Vite
+🚀 Advanced Profile Manager
+A powerful and dynamic ReactJS web application to manage and maintain user profiles with ease. This project uses Redux for state management and a custom useLocalStorage hook for data persistence, offering seamless features like adding, viewing, editing, searching, and filtering profiles.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live Demo
+Click here to try the live app
 
-Currently, two official plugins are available:
+📌 Features
+✅ Add New Profiles
+Users can add detailed profiles, including name, email, description, languages, education, specialization, and social media links.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ View All Profiles
+All profiles are displayed in a clean card-style layout with profile images and social media buttons.
 
-## Expanding the ESLint configuration
+✅ Edit & Delete Profiles
+Edit user details using a pre-filled form or delete profiles instantly.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Real-time Search
+Search through profiles using keywords from name, email, description, or specialization.
+
+✅ Advanced Filtering
+Filter profiles based on languages, education, or specialization using drop-down selectors.
+
+✅ Persistent Data
+All data is saved to localStorage via a custom React hook to retain changes across sessions.
+
+✅ Modular & Clean Codebase
+Built with reusable components and organized Redux state.
+
+🧠 Tech Stack
+React (JSX)
+
+Redux (State Management)
+
+Custom Hook for localStorage
+
+Plain CSS for styling
+
+Vite for fast dev environment
+
+📁 Project Structure
+css
+Copy
+Edit
+src/
+├── components/
+│   ├── AddUserForm.jsx
+│   ├── EditUserModal.jsx
+│   ├── SearchAndFilter.jsx
+│   └── UserCard.jsx
+├── redux/
+│   ├── actions.js
+│   ├── reducer.js
+│   └── store.js
+├── hooks/
+│   └── useLocalStorage.js
+├── App.jsx
+└── index.js
+🛠️ Getting Started
+bash
+Copy
+Edit
+# Clone the repository
+git clone https://github.com/cadetvivek/ProfileManager.git
+
+# Navigate into the project directory
+cd ProfileManager
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
